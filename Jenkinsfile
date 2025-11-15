@@ -33,7 +33,7 @@ stages{
         sh """
         echo "The Deploy Started"
         cd /var/lib/jenkins/workspace/tomcat-pipeline/javaapp-tomcat/target
-	    sudo cp *.war /opt/tomcat/webapps
+	    sudo cp *.war /opt/tomcat/latest/webapps
 	    echo "Deployed completed"
           """
 	}
