@@ -28,18 +28,7 @@ pipeline {
             }
         }
       
-        stage('SonarQube Analysis') {
-            steps {
-                withSonarQubeEnv('sonar') {
-                    sh '''
-                        cd javaapp-pipeline && pwd
-                        mvn clean verify sonar:sonar \
-                        -Dsonar.projectKey=java \
-                        -Dsonar.projectName=java 
-                    '''
-                }
-            }
-        }
+        
         
         stage('Manual Approval') {
             when {
