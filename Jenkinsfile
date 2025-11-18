@@ -61,6 +61,7 @@ pipeline {
             steps {
                 sh """
                     echo "The Deploy Started"
+                    pwd
                     echo "Deployed completed"
                 """
             }
