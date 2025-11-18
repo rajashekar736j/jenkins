@@ -62,7 +62,7 @@ pipeline {
                 sh """
                     echo "The Deploy Started"
                     cd javaapp-pipeline/target
-                    sudo cp *.war /opt/tomcat/webapps
+         //         sudo cp *.war /opt/tomcat/webapps
                     echo "Deployed completed"
                 """
             }
