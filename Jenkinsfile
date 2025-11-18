@@ -48,7 +48,8 @@ pipeline {
             steps {
                 sh """
                     echo "The Deploy Started"
-                    pwd
+                    cd target/
+                    ls
                     echo "Deployed completed"
                 """
             }
